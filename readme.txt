@@ -10,6 +10,8 @@ Delete running container > docker rm -vf container_name
 Clean cache and unused images and stopped container > docker system prune
 
 Stop all containers at once > docker stop $(docker ps -q)
+Delete all exited containers > docker rm $(docker ps -aq)
+
 
 
               
